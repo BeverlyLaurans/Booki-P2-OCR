@@ -20,6 +20,10 @@ strong {
     font-weight: 700;
 }
 
+li {
+    list-style: none;
+}
+
 /* Header */
 
 header {
@@ -54,10 +58,6 @@ nav ul li {
     display:flex;
     height: 100%;
     align-items:center;
-}
-
-li {
-    list-style: none;
 }
 
 nav ul li a {
@@ -340,6 +340,7 @@ span {
 
 .card-hebergement-principal .info-texte {
     height: 70%;
+    overflow: hidden;
 }
 
 .card-hebergement-principal .info-stars {
@@ -553,6 +554,9 @@ footer {
         margin-bottom: 50px;
         padding: 40px 0;
     }
+    .principaux .info-texte {
+        overflow: hidden;
+    }
     .populaires {
         padding: 40px 0;
     }
@@ -564,8 +568,17 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
+    .card-hebergement-populaire {
+        height: 155px;
+    }
     .activites {
         margin-top: 40px;
+    }
+    .activites .photo {
+        height: 75%;
+    }
+    .activites .info {
+        height: 25%;
     }
     article {
         height: 250px;
@@ -624,7 +637,7 @@ footer {
     }
     .search {
         margin-top: 50px;
-        padding: 0 15px 0 15px;
+        padding: 0 20px 0 20px;
     }
     .search h1, .search p {
         padding-left: 0;
@@ -632,6 +645,7 @@ footer {
     }
     .search-box {
         margin-top: 30px;
+        margin-left: 0;
     }
     .btn-search {
         height: 100%;
@@ -642,8 +656,11 @@ footer {
         display: flex;
         align-items: center;
     }
+    form {
+        width: 100%;
+    }
     input[type="text"] {
-        width: 225px;
+        width: 100%;
     }
     input[value="Rechercher"] {
         display: none;
@@ -663,10 +680,12 @@ footer {
     .filtres ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        justify-items: center;
     }
     .filtres ul li {
-        width: 75%;
-        margin: 0 0 22px 0;
+        width: 90%;
+        margin: 0;
         padding: 15px;
         border: 2px solid #D9D9D9;
     }
@@ -719,6 +738,7 @@ footer {
     }
     #activites h2 {
         padding-left: 25px;
+        max-width: 150px;
     }
     .activites {
         display: flex;
