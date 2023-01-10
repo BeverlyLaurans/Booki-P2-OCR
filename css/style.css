@@ -282,6 +282,10 @@ span {
     color: #0065FC;
 }
 
+.grey {
+    color: #F2F2F2;
+}
+
 .fa-star {
     font-size: 0.688em;
 }
@@ -695,6 +699,7 @@ footer {
         flex-wrap: wrap;
         margin: 0;
         height: 100%;
+        width: 100%;
     }
     .description-filtres {
         width: 100%;
